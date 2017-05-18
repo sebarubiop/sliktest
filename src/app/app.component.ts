@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FileUploader } from 'ng2-file-upload';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  public uploader:FileUploader = new FileUploader({url:'https://slik-test.herokuapp.com/upload'});
 }
