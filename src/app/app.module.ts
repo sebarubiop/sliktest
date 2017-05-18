@@ -6,9 +6,9 @@ import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload';
 
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { PostsComponent } from './posts/posts.component';
+// import { PostsComponent } from './posts/posts.component';
 
-// import { PostsService } from './posts.service';
+import { PostsService } from './posts.service';
 
 // Define the routes
 // const ROUTES = [
@@ -35,7 +35,7 @@ import { PostsComponent } from './posts/posts.component';
     HttpModule
     // RouterModule.forRoot(ROUTES) // Add routes to the app
   ],
-  providers: [], //PostsService, Add the posts service
+  providers: [PostsService], //PostsService, Add the posts service
   bootstrap: [AppComponent]
 })
 export class AppModule { }
