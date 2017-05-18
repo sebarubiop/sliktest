@@ -7,5 +7,5 @@ import { FileUploader } from 'ng2-file-upload';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public uploader:FileUploader = new FileUploader({url:'https://slik-test.herokuapp.com/api/upload'});
+  public uploader:FileUploader = new FileUploader({url:'https://slik-test.herokuapp.com/upload'});
 }
