@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // app.use('/api', api);
 var storage = multer.diskStorage({ //multers disk storage settings
     destination: function (req, file, cb) {
-        cb(null, './uploads/');
+        cb(null, './server/uploads/');
     },
     filename: function (req, file, cb) {
         var datetimestamp = Date.now();
@@ -43,6 +43,7 @@ var upload = multer({ //multer settings
 
 /** API path that will upload the files */
 app.post('/upload', function(req, res) {
+  console.log(res);
     upload(req,res,function(err){
   console.log(req.file);
         if(err){
