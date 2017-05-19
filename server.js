@@ -1,10 +1,9 @@
+'use strict';
 // Get dependencies
 const express = require('express');
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
-
-var fs = require('fs');
 
 // Get our API routes
 const api = require('./server/routes/api');
