@@ -43,7 +43,7 @@ router.post('/upload', function(req, res) {
               res.json({error_code:1,err_desc:err});
               return;
             }
-            res.json({url_ori:result.url,url300:url300,url600:url600,url900:url900});
+            res.json({error_code:0,err_desc:null,url_ori:result.url,url300:url300,url600:url600,url900:url900});
           }
           else {
             console.log('Error uploading to cloudinary');

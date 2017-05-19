@@ -11,10 +11,10 @@
 
     <div class="navbar navbar-default">
         <div class="navbar-header">
-            <a class="navbar-brand" href>Angular2 File Upload</a>
+            <a class="navbar-brand" href>Slik Test - Angular2 File Upload, Node.js and Cloudinary</a>            
         </div>
     </div>
-
+    <a class="btn btn-primary pull-right" href="https://github.com/sebarubiop/sliktest" target="_blank">View on GitHub</a>
     <div class="row">
 
         <div class="col-md-3">
@@ -65,8 +65,8 @@
                 <tr *ngFor="let item of uploader.queue">
                     <td><strong>{{ item?.file?.name }}</strong></td>
                     
-                    <td *ngIf="uploader.isHTML5" nowrap>{{ item?.file?.size/1024/1024 | number:'.2' }} MB</td>
-                    <td *ngIf="uploader.isHTML5">
+                    <td nowrap>{{ item?.file?.size/1024/1024 | number:'.2' }} MB</td>
+                    <td>
                         <div class="progress" style="margin-bottom: 0;">
                             <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': item.progress + '%' }"></div>
                         </div>
@@ -115,7 +115,7 @@
                     <span class="glyphicon glyphicon-trash"></span> Remove all
                 </button>
             </div>
-
+            
         </div>
 
     </div>
