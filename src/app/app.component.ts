@@ -30,7 +30,7 @@ export class AppComponent {
 
     this.uploader.onCompleteItem = (item:any, response:any, status:any, headers:any) => {
         var url = JSON.parse(response);
-        console.log(response, url);// the url will be in the response
+        // console.log(response, url);// the url will be in the response
         
         if(url.error_code == 0){
           this.modal.alert()
